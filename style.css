@@ -1,0 +1,609 @@
+body {
+  background-color: #b2caf1;
+}
+
+.primary-header {
+  /* position: fixed; */
+
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  /* height: 100vh; */
+  transition: background-color 0.5s;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('wallpaperflare.com_wallpaper\ \(2\).jpg');
+    background-size: cover; */
+}
+
+.container {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.navbar {
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.05); */
+  transition: height 0.25s;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin-left: 10rem;
+  margin-right: auto;
+}
+
+.nav-link {
+  transition: color .25s;
+  text-decoration: none;
+  color: #090808;
+  border-bottom: 2px solid rgba(255, 255, 255, .25);
+  ;
+  padding-bottom: 10px;
+}
+
+.nav-link:hover {
+  color: #d3d3d3 !important;
+  border-bottom: 0;
+}
+
+
+.button:hover {
+  background-color: #d3d3d3;
+}
+
+header.active {
+  background-color: #fff;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+header.active .navbar {
+  height: 6rem;
+}
+
+header.active .logo,
+header.active .nav-link {
+  color: #313131;
+}
+
+header.active .nav-link:hover {
+  color: #808080;
+}
+
+header.active .button {
+  background-color: #313131;
+}
+
+header.active .button:hover {
+  background-color: #151515;
+}
+
+.profile1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profile1 button{
+background: none;
+border: none;
+}
+.profile1 img {
+  width: 44px;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 2px solid black;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 2px;
+  /* box-shadow:0px -1px 25px rgba(0,0,0,0.5), 0px 1px 25px rgba(0,0,0,0.7); */
+  border: 2px solid rgba(255, 255, 255, .25);
+}
+
+
+
+
+.footer-basic {
+  margin-top: 150px;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+ .a {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #1a1717;
+  padding: 2px;
+  /* border: 2px solid rgba(255, 255, 255, .25); */
+  margin: 2px 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.twitter:hover{
+  background-color: #00acee ;
+  border: none;
+  color: white;
+}
+.facebook:hover , .linkedin:hover{
+  background-color: white ;
+  border: none;
+ 
+}
+.instagram:hover{
+  background: #f09433; 
+  border: none;
+  color: white;
+}
+.google-plus:hover{
+  background: yellow; 
+  border: none;
+  color: white;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  /* color: #aaa; */
+  color: #808080;
+  margin-bottom: 60px;
+}
+
+.footer-basic h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/* .............................. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,300');
+
+#modal{
+  display: none;
+}
+
+.frame {
+  position:absolute;
+  /* right: 2em;
+  top: 20em; */
+  top: 55%;
+  left: 50%; 
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEBE6C', endColorstr='#CA7C4E', GradientType=1); */
+  color: #786450;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+
+}
+
+.center {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  height: 299px;
+  width: 320px;
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.profile {
+  float: left;
+  width: 200px;
+  height: 320px;
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 38px auto 0 auto;
+}
+
+.circle-1{
+  position: absolute;
+  box-sizing: border-box;
+  width: 76px;
+  height: 76px;
+  top: -3px;
+  left: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #786450 #786450 #786450 transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 82px;
+  height: 82px;
+  top: -6px;
+  left: -6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #786450 transparent #786450 #786450;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.image img {
+  display: block;
+  border-radius: 50%;
+  background: #F5E8DF;
+}
+.circle-1:hover{
+  transform: rotate(360deg);
+}
+.circle-2:hover{
+  transform: rotate(-360deg);
+}
+.image:hover {
+  cursor: pointer;
+}
+
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.job {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.actions {
+  margin-top: 33px;
+}
+
+.btn {
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  background: none;
+  border: 1px solid #786450;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+  color: #786450;
+}
+
+.btn:hover {
+  background: #786450;
+  color: #fff;
+}
+
+
+
+
+.stats {
+  float: left;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 120px;
+  height: 99px;
+  background: #F5E8DF;
+  text-align: center;
+  padding-top: 28px;
+  transition: all .4s ease-in-out;
+}
+  .box:hover {
+    background: #E1CFC2;
+    cursor: pointer;
+  }
+
+  .box:nth-child(2) {
+    margin: 1px 0;
+  }
+
+
+
+.stats span {
+  display: block;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.parameter {
+  font-size: 11px;
+}
+
+
+
+/* --------------------------------animation */
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+::selection {
+  background: transparent;
+}
+
+
+h1 span {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 40px;
+  color: #090808;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ------------------------------------------------------ */
+
+.animation {
+  /* background-color: #b2caf1; */
+  /* background-image: url('6681.png'); */
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  justify-content: center;
+}
+
+/* body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 } */
+
+.animation p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, .25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: relative;
+  top: 14%;
+  left: 14%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+.animation p span {
+
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+  /* Clip Background Image */
+
+  background: url('https://i.ibb.co/RDTnNrT/animated-text-fill.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.wall {
+  background-color: #ffffff;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.wall img {
+  position: absolute;
+  left: 400px;
+  height: 100%;
+  margin: 0 0 0 -20em;
+}
+
+.wall span {
+  /* position: absolute;
+  top: 35%;
+  border: 4px double rgba(133, 127, 127, 0.441);
+  border-width: 4px 0;
+  padding: 1.5em 0em; */
+}
+
+.wall span p {
+  color: #313131;
+  letter-spacing: 1px;
+  /* font-family:'Courier New', Courier, monospace; */
+
+}
+
+.wall span h2 {
+  color: #313131;
+  margin: 10px 60px;
+  font: 700 3em/1 "Luckiest Guy", cursive;
+}
+
+/* .................................................................... */
+
+
+/* body {
+  
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.waviy {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: fit-content;
+  /* margin-left: -21rem; */
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  /* color: #fff; */
+  opacity: 0.8;
+  font: 700 2em/1 "Luckiest Guy", cursive;
+  color: #353535;
+  text-align: center;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+  0%,
+  80% {
+    transform: rotateY(360deg)
+  }
+}
